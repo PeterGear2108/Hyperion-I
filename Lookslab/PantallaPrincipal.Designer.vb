@@ -2012,7 +2012,7 @@ Partial Class PantallaPrincipal
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "PantallaPrincipal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Lookslab > Sistema de Gestion"
+        Me.Text = " "
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MainTabs.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
