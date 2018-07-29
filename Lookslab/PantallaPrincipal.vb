@@ -317,12 +317,12 @@
         End If
     End Sub
 
-    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles UsersSystem.Click
+    Private Sub Button10_Click(sender As Object, e As EventArgs) 
         UserModule.Show()
         UserModule.BringToFront()
     End Sub
 
-    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles CustGridShow.Click
+    Private Sub Button11_Click(sender As Object, e As EventArgs) 
         MainTabs.SelectTab(1)
     End Sub
 

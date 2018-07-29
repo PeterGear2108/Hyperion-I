@@ -24,10 +24,10 @@ Partial Class StartupScreen
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.MainLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
-        Me.ApplicationTitle = New System.Windows.Forms.Label()
         Me.DetailsLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
         Me.Copyright = New System.Windows.Forms.Label()
         Me.Version = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.MainLayoutPanel.SuspendLayout()
         Me.DetailsLayoutPanel.SuspendLayout()
         Me.SuspendLayout()
@@ -38,8 +38,8 @@ Partial Class StartupScreen
         Me.MainLayoutPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MainLayoutPanel.ColumnCount = 1
         Me.MainLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225.0!))
-        Me.MainLayoutPanel.Controls.Add(Me.ApplicationTitle, 0, 0)
         Me.MainLayoutPanel.Controls.Add(Me.DetailsLayoutPanel, 0, 1)
+        Me.MainLayoutPanel.Controls.Add(Me.Label1, 0, 0)
         Me.MainLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MainLayoutPanel.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.MainLayoutPanel.Location = New System.Drawing.Point(0, 0)
@@ -48,18 +48,6 @@ Partial Class StartupScreen
         Me.MainLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 142.0!))
         Me.MainLayoutPanel.Size = New System.Drawing.Size(496, 303)
         Me.MainLayoutPanel.TabIndex = 0
-        '
-        'ApplicationTitle
-        '
-        Me.ApplicationTitle.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ApplicationTitle.BackColor = System.Drawing.Color.Transparent
-        Me.ApplicationTitle.Font = New System.Drawing.Font("Oswald Stencil", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ApplicationTitle.Location = New System.Drawing.Point(36, 0)
-        Me.ApplicationTitle.Name = "ApplicationTitle"
-        Me.ApplicationTitle.Size = New System.Drawing.Size(424, 114)
-        Me.ApplicationTitle.TabIndex = 0
-        Me.ApplicationTitle.Text = "Título de la aplicación"
-        Me.ApplicationTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'DetailsLayoutPanel
         '
@@ -101,6 +89,17 @@ Partial Class StartupScreen
         Me.Version.Text = "Versión {0}.{1:00}"
         Me.Version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Label1
+        '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(86, 20)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(324, 73)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Hyperion I"
+        '
         'StartupScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -115,6 +114,7 @@ Partial Class StartupScreen
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.MainLayoutPanel.ResumeLayout(False)
+        Me.MainLayoutPanel.PerformLayout()
         Me.DetailsLayoutPanel.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -123,5 +123,5 @@ Partial Class StartupScreen
     Friend WithEvents DetailsLayoutPanel As TableLayoutPanel
     Friend WithEvents Version As Label
     Friend WithEvents Copyright As Label
-    Friend WithEvents ApplicationTitle As Label
+    Friend WithEvents Label1 As Label
 End Class

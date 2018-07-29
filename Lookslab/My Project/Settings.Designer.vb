@@ -64,12 +64,12 @@ Namespace My
                 Return CType(Me("LookslabConnectionString"),String)
             End Get
         End Property
-
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-0PLFSH9\SQLEXPRESS;Initial Catalog=Lookslab; " &
-            "User ID=sa; Password=Pedro123")>
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-0PLFSH9\SQLEXPRESS;Initial Catalog=Lookslab;Persist Security "& _ 
+            "Info=True;User ID=sa")>  _
         Public ReadOnly Property LookslabSQLEXPRESS() As String
             Get
                 Return CType(Me("LookslabSQLEXPRESS"),String)

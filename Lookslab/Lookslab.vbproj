@@ -172,6 +172,18 @@
     <Compile Include="ChangeQuestion.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Comodin.Designer.vb">
+      <DependentUpon>Comodin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comodin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion.Designer.vb">
+      <DependentUpon>Configuracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CreateAppointment.Designer.vb">
       <DependentUpon>CreateAppointment.vb</DependentUpon>
     </Compile>
@@ -257,6 +269,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChangeQuestion.resx">
       <DependentUpon>ChangeQuestion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comodin.resx">
+      <DependentUpon>Comodin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion.resx">
+      <DependentUpon>Configuracion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreateAppointment.resx">
       <DependentUpon>CreateAppointment.vb</DependentUpon>
